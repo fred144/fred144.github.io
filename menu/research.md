@@ -31,3 +31,4 @@ $\nu$SpaceSim is an end-to-end Python simulation package designed to aid cosmic 
 </p>
 I was previously a part of a high energy physics group, helping assesses the performance of the endcap calorimeters of the CMS experiment at the LHC through simulations. The plot above shows the simulated and reconstructed hits from a particle gun for this specific detector component, the HGCAL. Knowing how well a certain detector geometry version can resolve energies at the TeV regime can help assess its future performance. 
  
+----
