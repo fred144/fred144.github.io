@@ -22,7 +22,7 @@ One of my ongoing projects is to study structural formation in the early univers
   <img src="../assets/img/nulogo.png" alt="nuspacesim" width="150" style="float: right;"/>
 </p>
 
-$\nu$SpaceSim is an end-to-end Python simulation package designed to aid cosmic $\nu_\tau$ detection via atmospheric interactions. The software simulates all aspects of neutrino detection, from Earth propagation to signal detection. It does this by sampling monte-carlo simulation libraries. Currently, I'm helping build the extensive air shower module. Checkout the [latest build](https://github.com/NuSpaceSim/nuSpaceSim).
+$\nu$SpaceSim is an end-to-end Python simulation package designed to aid cosmic $\nu_\tau$ detection via atmospheric interactions. The software simulates all aspects of neutrino detection, from propagation to signal detection. It does this by sampling monte-carlo simulation libraries. Currently, I'm helping build the extensive air shower module. Checkout the [latest build](https://github.com/NuSpaceSim/nuSpaceSim).
 
 ----
 ### High Energy Physics
@@ -30,3 +30,4 @@ $\nu$SpaceSim is an end-to-end Python simulation package designed to aid cosmic 
   <img src="../assets/img/hep.png" alt="nuspacesim" width="615" />
 </p>
 I was previously a part of a high energy physics group, helping assesses the performance of the endcap calorimeters of the CMS experiment at the LHC through simulations. The plot above shows the simulated and reconstructed hits from a particle gun for this specific detector component, the HGCAL. Knowing how well a certain detector geometry version can resolve energies at the TeV regime can help assess its future performance. 
+ 
