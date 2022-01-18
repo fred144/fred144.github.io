@@ -13,4 +13,4 @@ I'm Fred, an undergraduate student at the University of Maryland's Department of
 </p>
  
 --------------
-You can reach me at fgarcia4 (at) umd (dot) edu.
+
