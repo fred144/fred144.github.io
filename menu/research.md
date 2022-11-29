@@ -14,7 +14,13 @@ My research is primarily in computational (astro)physics. That is, I use and hel
 </video>
 </p>
 
-One of my ongoing projects is to study structural formation in the early universe-- particularly, proto-globular clusters-- by running radiation hydrodynamics simulations on high-performance computing clusters. The video above depicts Population II star formation around a dark matter halo. 
+<p align="center">
+<video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
+  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/fs035_ms10/movies/fs035_gas_lum.mp4">
+</video>
+</p>
+
+One of my ongoing projects is to study structural formation in the early universe-- particularly, proto-globular clusters-- by running radiation hydrodynamics simulations on high-performance computing clusters. The video above depicts Population II star formation in a dwarf galaxy for differtn assumed gas-to-star conversion efficiencies.
 
 ----
 ### Astroparticle Physics
