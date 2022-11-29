@@ -20,7 +20,7 @@ My research is primarily in computational (astro)physics. That is, I use and hel
 </video>
 </p>
 
-One of my ongoing projects is to study structural formation in the early universe-- particularly, proto-globular clusters-- by running radiation hydrodynamics simulations on high-performance computing clusters. The video above depicts Population II star formation in a dwarf galaxy for differtn assumed gas-to-star conversion efficiencies.
+One of my ongoing projects is to study structural formation in the early universe-- particularly, proto-globular clusters-- by running radiation hydrodynamics simulations on high-performance computing clusters. The video above depicts Population II star formation in a dwarf galaxy for different assumed gas-to-star conversion efficiencies.
 
 ----
 ### Astroparticle Physics
