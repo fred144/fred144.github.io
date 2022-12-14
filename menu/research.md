@@ -10,6 +10,12 @@ My research is primarily in computational (astro)physics. That is, I use and hel
 ### Cosmology
 <p align="center">
 <video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
+  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel.mp4">
+</video>
+</p>
+
+<p align="center">
+<video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
   <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/fs07_ms10/movies/gas_lum_panel.mp4">
 </video>
 </p>
