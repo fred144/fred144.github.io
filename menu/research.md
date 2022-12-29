@@ -8,12 +8,17 @@ My research is primarily in computational (astro)physics. That is, I use and hel
 
 ----
 ### Cosmology
+
+One of my ongoing projects is to study structural formation in the early universe-- particularly, proto-globular clusters-- by running radiation hydrodynamics simulations on high-performance computing clusters. The movie below shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts. For more details, see the preprint 
+
+>Garcia, F., Ricotti, M., Sugimura, K., and Park, J., “Star Cluster Formation and Survival in the First Galaxies”, submitted to MNRAS, [arXiV](https://arxiv.org/abs/2212.13946)
+
 <p align="center">
 <video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
   <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel.mp4">
 </video>
 </p>
-
+<!-- 
 <p align="center">
 <video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
   <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/fs07_ms10/movies/gas_lum_panel.mp4">
@@ -24,9 +29,9 @@ My research is primarily in computational (astro)physics. That is, I use and hel
 <video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
   <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/fs035_ms10/movies/fs035_gas_lum.mp4">
 </video>
-</p>
+</p> -->
 
-One of my ongoing projects is to study structural formation in the early universe-- particularly, proto-globular clusters-- by running radiation hydrodynamics simulations on high-performance computing clusters. The video above depicts Population II star formation in a dwarf galaxy for different assumed gas-to-star conversion efficiencies.
+
 
 ----
 ### Astroparticle Physics
