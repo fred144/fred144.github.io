@@ -15,7 +15,7 @@ One of my ongoing projects is to study structural formation in the early univers
 
 <p align="center">
 <video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
-  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel.mp4">
+  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel_lum.mp4">
 </video>
 </p>
 <!-- 
