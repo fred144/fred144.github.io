@@ -9,7 +9,7 @@ My research is primarily in computational (astro)physics. That is, I use and hel
 ----
 ### Cosmology
 
-One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running radiation hydrodynamics simulations on supercomputers. The movie below (more movies can be found [here](https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed gas-to-star conversion efficiencies, $f_*$. For more details, see the preprint 
+One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running radiation hydrodynamics simulations on supercomputers. The movie below (more movies can be found [here](https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed star formation efficiencies (SFE). For more details, see the preprint 
 
 >Garcia, F., Ricotti, M., Sugimura, K., and Park, J., “Star Cluster Formation and Survival in the First Galaxies”, submitted to MNRAS, [arXiV](https://arxiv.org/abs/2212.13946)
 
