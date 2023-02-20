@@ -14,7 +14,7 @@ One of my ongoing projects is to study structural formation in the early univers
 >Garcia, F., Ricotti, M., Sugimura, K., and Park, J., “Star Cluster Formation and Survival in the First Galaxies”, submitted to MNRAS, [arXiV](https://arxiv.org/abs/2212.13946)
 
 <p align="center">
-<video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
+<video width="615" loop="loop" muted="muted" plays-inline="true" autoplay>
   <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel_lum.mp4">
 </video>
 </p>
