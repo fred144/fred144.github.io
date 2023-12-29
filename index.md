@@ -3,9 +3,9 @@ layout: page
 title: Hello.
 ---
 
-I'm Fred, a PhD student in the Astronomy Department at Columbia University, <br>
-previously at the University of Maryland Physics and Astronomy Departments as well as at NASA GSFC. <br>
-Currently, I'm working on problems in galaxy formation at Columbia and at the CCA at the Flatiron Institute.  
+I'm Fred, a PhD student at Columbia University Astronomy. 
+I was previously at the University of Maryland as well as at NASA GSFC. 
+Currently, I'm working on galaxy formation at Columbia and at the CCA at the Flatiron Institute.  
 
 <!-- I'm Fred, an undergraduate student at the University of Maryland's Departments of [Physics](https://umdphysics.umd.edu/) and [Astronomy](https://www.astro.umd.edu/). Currently, I'm  working on computer simulations at the [CTC](https://www.astro.umd.edu/rareas/ctc/) and with [nuSpaceSim](https://heasarc.gsfc.nasa.gov/docs/nuSpaceSim/) at GSFC.   -->
 
