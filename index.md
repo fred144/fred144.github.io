@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Hello.
+title: Hello, I'm __Fred__.
 ---
 
-I'm Fred, a PhD student at Columbia University [Astronomy](https://www.astro.columbia.edu/content/fred-angelo-garcia). 
-I was previously at the University of Maryland and at NASA GSFC. 
+I'm a PhD student at Columbia University [Astronomy](https://www.astro.columbia.edu/content/fred-angelo-garcia). 
+Previously, I was at the University of Maryland and at NASA GSFC. 
 Currently, I'm working on galaxy formation at Columbia and at the CCA at the Flatiron Institute.  
 
 <!-- I'm Fred, an undergraduate student at the University of Maryland's Departments of [Physics](https://umdphysics.umd.edu/) and [Astronomy](https://www.astro.umd.edu/). Currently, I'm  working on computer simulations at the [CTC](https://www.astro.umd.edu/rareas/ctc/) and with [nuSpaceSim](https://heasarc.gsfc.nasa.gov/docs/nuSpaceSim/) at GSFC.   -->
