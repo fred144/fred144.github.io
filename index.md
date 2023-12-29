@@ -3,7 +3,7 @@ layout: page
 title: Hello.
 ---
 
-I'm Fred, a PhD student at Columbia University Astronomy. 
+I'm Fred, a PhD student at Columbia University [Astronomy](https://www.astro.columbia.edu/content/fred-angelo-garcia). 
 I was previously at the University of Maryland and at NASA GSFC. 
 Currently, I'm working on galaxy formation at Columbia and at the CCA at the Flatiron Institute.  
 
