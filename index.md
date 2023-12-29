@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello, I'm __Fred__.
+title: Hello, I'm Fred.
 ---
 
 I'm a PhD student at Columbia University [Astronomy](https://www.astro.columbia.edu/content/fred-angelo-garcia). 
