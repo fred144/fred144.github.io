@@ -3,13 +3,14 @@ layout: page
 title: CV 
 permalink: /cv
 ---
-
-- education: B.S., physics and astronomy (2023)
-    - institution: university of maryland, college park
-    - advisor: massimo ricotti
+- Ph.D., Astrophysics (current)
+    - Columbia University in the City of New York
+- B.S., Physics and Astronomy (2023)
+    - University of Maryland, College Park
+    - Advisor: Massimo Ricotti
 - orcid: [0000-0002-4545-2700](https://orcid.org/0000-0002-4545-2700)
-- email: fgarcia4 (at) umd (dot) edu
-- [full CV](https://drive.google.com/file/d/14rdkP9Oa8FbA_hpaRPozkc9fNpDfSpcv/view?usp=sharing)
+- email: g(dot)fred(at)columbia(dot)edu
+[full CV](https://drive.google.com/file/d/14rdkP9Oa8FbA_hpaRPozkc9fNpDfSpcv/view?usp=sharing)
 
 
 
