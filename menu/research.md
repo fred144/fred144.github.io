@@ -4,32 +4,21 @@ title: Research
 permalink: /research
 ---
 
-My research is primarily in computational (astro)physics. That is, I use and help build simulations. Below are some of my current and past works.   
+My research is primarily in computational (astro)physics. That is, I use and help build simulations design to run on some of the world's biggest supercomputers. Below are some of my current and past works.   
 
 ----
-### Cosmology
+### Galaxy Formation and Cosmology
+I am currently workin with Shy Genel under the Cosmology and Astrophysics with MachinE Learning Simulations (CAMELS) collaboration. We are currently designing new sub-resolution models for cosmological (magneto)hydrodynamic simulations that aim  
+<br>
+One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running zoom-in radiation hydrodynamics simulations. The movie below (more movies can be found [here](https://www.youtube.com/@fredangelogarcia)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed star formation efficiencies (SFE). For more details, see [2023MNRAS.522.2495G](https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2495G/abstract).
 
-One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running radiation hydrodynamics simulations on supercomputers. The movie below (more movies can be found [here](https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed star formation efficiencies (SFE). For more details, see the preprint 
-
->Garcia, F., Ricotti, M., Sugimura, K., and Park, J., “Star Cluster Formation and Survival in the First Galaxies”, submitted to MNRAS, [arXiV](https://arxiv.org/abs/2212.13946)
 
 <p align="center">
 <video width="615" loop="loop" muted="muted" plays-inline="true" autoplay>
-  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel_lum.mp4">
-</video>
-</p>
-<!-- 
-<p align="center">
-<video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
-  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/fs07_ms10/movies/gas_lum_panel.mp4">
+  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/two_panel_sfr_rev1.mp4">
 </video>
 </p>
 
-<p align="center">
-<video width="615" loop="loop" muted="muted" plays-inline="true" controls autoplay>
-  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/fs035_ms10/movies/fs035_gas_lum.mp4">
-</video>
-</p> -->
 
 
 
