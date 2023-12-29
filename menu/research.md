@@ -12,7 +12,7 @@ I am currently working with Shy Genel designing new sub-grid models for cosmolog
 <p align="center">
   <img src="../assets/img/camels.png" alt="camels logo" width="615" />
 </p>
-<br>
+
 One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running zoom-in radiation hydrodynamics simulations. The movie below (more movies can be found [here](https://www.youtube.com/@fredangelogarcia)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed star formation efficiencies (SFE). For more details, see [2023MNRAS.522.2495G](https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2495G/abstract).
 
 
