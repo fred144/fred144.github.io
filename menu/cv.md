@@ -3,7 +3,7 @@ layout: page
 title: CV 
 permalink: /cv
 ---
-- Ph.D., Astrophysics (current)
+- Ph.D., Astrophysics (in progress)
     - Columbia University in the City of New York
 - B.S., Physics and Astronomy (2023)
     - University of Maryland, College Park
