@@ -4,7 +4,7 @@ title: Research
 permalink: /research
 ---
 
-My research is primarily in computational (astro)physics. That is, I use and help build simulations designed to run on some of the world's biggest supercomputers. I'm also interested in using the large data sets produced by these simulations in machine learning applications. Below are some of my current and past works.   
+My research is primarily in computational (astro)physics. I use and help build simulations designed to run on some of the world's biggest supercomputers. I'm also interested in using the large data sets produced by these simulations in machine learning applications. Below are some of my current and past works.   
 
 ----
 ### Galaxy Formation and Cosmology
