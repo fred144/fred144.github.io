@@ -11,7 +11,8 @@ Currently, I'm working on galaxy formation at Columbia and at the CCA at the Fla
 
 <p align="center">
 <video width="auto" width="100%"  loop="loop" muted="muted" plays-inline="true" autoplay>
-  <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/lowsfe_butterfly.mp4">
+  <!-- <source type="video/mp4" src="https://terpconnect.umd.edu/~fgarcia4/cosmology/halo_D/lowsfe_butterfly.mp4"> -->
+  <source type="video/mp4" src="./assets/img/butterfly_cinematic_20fps.mp4">
 </video>
 </p>
  
