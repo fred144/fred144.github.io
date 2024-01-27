@@ -8,7 +8,7 @@ My research is primarily in computational (astro)physics. I use and help build s
 
 ----
 ### Galaxy Formation and Cosmology
-I am currently working with Shy Genel designing new sub-grid models for cosmological (magneto)hydrodynamic simulations on which to base a new simulation suite for the Cosmology and Astrophysics with MachinE Learning Simulations ([CAMELS](https://camels.readthedocs.io/en/latest/)) project.
+I am currently designing new sub-grid models for cosmological (magneto)hydrodynamic simulations on which to base a new simulation suite for the Cosmology and Astrophysics with MachinE Learning Simulations ([CAMELS](https://camels.readthedocs.io/en/latest/)) project.
 <p align="center">
   <img src="../assets/img/camels.png" alt="camels logo" width="auto" width="100%"  />
 </p>
