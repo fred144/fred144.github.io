@@ -8,12 +8,12 @@ My research is primarily in computational (astro)physics. I use and help build s
 
 ----
 ### Galaxy Formation and Cosmology
-I am currently designing new sub-grid models for cosmological (magneto)hydrodynamic simulations on which to base a new simulation suite for the Cosmology and Astrophysics with MachinE Learning Simulations ([CAMELS](https://camels.readthedocs.io/en/latest/)) project.
+> I am currently designing new sub-grid models for cosmological (magneto)hydrodynamic simulations on which to base a new simulation suite for the Cosmology and Astrophysics with MachinE Learning Simulations ([CAMELS](https://camels.readthedocs.io/en/latest/)) project.
 <p align="center">
   <img src="../assets/img/camels.png" alt="camels logo" width="auto" width="100%"  />
 </p>
 
-One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running zoom-in radiation hydrodynamics simulations. The movie below (more movies can be found [here](https://www.youtube.com/@fredangelogarcia)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed star formation efficiencies (SFE). For more details, see [2023MNRAS.522.2495G](https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2495G/abstract).
+> One of my ongoing projects is to study structural formation in the early universe -- particularly, star clusters -- by running zoom-in radiation hydrodynamics simulations. The movie below (more movies can be found [here](https://www.youtube.com/@fredangelogarcia)) shows the formation of the first star clusters in a low mass dwarf galaxy at high redshifts for different assumed star formation efficiencies (SFE). For more details, see [2023MNRAS.522.2495G](https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.2495G/abstract).
 
 
 <p align="center">
