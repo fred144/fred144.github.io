@@ -2,7 +2,7 @@
 layout: page
 title: Hi I'm Fred,
 ---
-a PhD student working on galaxy formation at Columbia [Astronomy](https://www.astro.columbia.edu/content/fred-angelo-garcia) and at the CCA, Flatiron Institute. Before this, I was at the [University of Maryland](https://www.astro.umd.edu/) and [NASA GSFC](https://science.gsfc.nasa.gov/astrophysics/astroparticles). 
+a PhD student working on galaxy formation at Columbia [Astronomy](https://www.astro.columbia.edu/content/fred-angelo-garcia) and at the CCA, Flatiron Institute. Before this, I was at the University of Maryland and NASA GSFC. 
 
 <p align="center">
 <video width="auto" width="100%"  loop="loop" muted="muted" plays-inline="true" autoplay>
