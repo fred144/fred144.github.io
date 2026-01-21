@@ -64,3 +64,8 @@ function draw() {
     // seconds (60 dots, 10x6 grid)
     drawDots(3 * width / 4, height / 2, 120, 60, sec, 10);
 }
+
+// windowResized() is called whenever the browser window is resized
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
