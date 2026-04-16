@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Example dashboard | DataViz Tutorial</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-near-midnight.07766c04.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-near-midnight.07766c04.css">
+<link rel="modulepreload" href="./_observablehq/client.5c89c71d.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.5791a045.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/66d82917.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/a96a6bbb.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/9cffc2bd.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e93ca09f.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/0f2de24d.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/65eb105b.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/7ef8fb2e.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/aeb57b94.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/1d2aed74.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/87adea64.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/9ba9c7f3.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/4202580c.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/cdd7e898.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/b4e2ad9a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e804d15.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/3785bf2d.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/40599fb3.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/e49e792c.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/8d1e5425.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/20d3f133.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/7553081f.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/0dfd751c.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/3c90ee06.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/720b7f0a.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/ba24c2e7.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/4d94e5b7.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/6d3a6726.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/9f03c579.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/07c9626f.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/b58a267d.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/004da2ac.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/b5786b3f.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/53fe8176.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/e08981d9.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/d4ec0aa1.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/cbf6ba23.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/42820bfa.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.5c89c71d.js";
+import {registerFile} from "./_observablehq/stdlib.5791a045.js";
+
+registerFile("./data/launches.csv", {"name":"./data/launches.csv","mimeType":"text/csv","path":"./_file/data/launches.f93d998e.csv","lastModified":1776373662037,"size":969471});
+
+define({id: "4a29079c", inputs: ["FileAttachment","d3"], outputs: ["launches","yearlyCounts","yearlyNationCounts","peakYear","nationCounts"], body: async (FileAttachment,d3) => {
+const launches = await FileAttachment("./data/launches.csv").csv({typed: true});
+
+const yearlyCounts = Array.from(
+  d3.rollup(launches, (values) => values.length, (d) => d.date.getFullYear()),
+  ([year, count]) => ({year: new Date(year, 0, 1), count})
+).sort((a, b) => d3.ascending(a.year, b.year));
+
+const yearlyNationCounts = Array.from(
+  d3.rollup(
+    launches,
+    (values) => values.length,
+    (d) => d.date.getFullYear(),
+    (d) => d.stateId === "SU" || d.stateId === "RU" ? "Russia / Soviet Union" : d.stateId === "US" ? "United States" : d.stateId === "CN" ? "China" : "Other"
+  ),
+  ([year, nationCounts]) => Array.from(nationCounts, ([nation, count]) => ({
+    year: new Date(year, 0, 1),
+    nation,
+    count
+  }))
+).flat().sort((a, b) => d3.ascending(a.nation, b.nation) || d3.ascending(a.year, b.year));
+
+const peakYear = yearlyCounts.reduce((best, current) => (current.count > best.count ? current : best), yearlyCounts[0]);
+
+const nationCounts = Array.from(
+  d3.rollup(
+    launches,
+    (values) => values.length,
+    (d) => d.stateId === "SU" || d.stateId === "RU" ? "Russia / Soviet Union" : d.stateId === "US" ? "United States" : d.stateId === "CN" ? "China" : "Other"
+  ),
+  ([nation, count]) => ({nation, count})
+).sort((a, b) => d3.descending(a.count, b.count));
+return {launches,yearlyCounts,yearlyNationCounts,peakYear,nationCounts};
+}});
+
+define({id: "92cac4f1", mode: "inline", inputs: ["launches","display"], body: async (launches,display) => {
+display(await(
+launches.filter((d) => d.stateId === "US").length.toLocaleString("en-US")
+))
+}});
+
+define({id: "f84e9749", mode: "inline", inputs: ["launches","display"], body: async (launches,display) => {
+display(await(
+launches.filter((d) => d.stateId === "SU" || d.stateId === "RU").length.toLocaleString("en-US")
+))
+}});
+
+define({id: "3f89d55f", mode: "inline", inputs: ["launches","display"], body: async (launches,display) => {
+display(await(
+launches.filter((d) => d.stateId === "CN").length.toLocaleString("en-US")
+))
+}});
+
+define({id: "d55bddad", mode: "inline", inputs: ["launches","display"], body: async (launches,display) => {
+display(await(
+launches.filter((d) => d.stateId !== "US" && d.stateId !== "SU" && d.stateId !== "RU" && d.stateId !== "CN").length.toLocaleString("en-US")
+))
+}});
+
+define({id: "1f6e31b1", inputs: ["Plot","yearlyNationCounts"], outputs: ["launchTimeline"], body: (Plot,yearlyNationCounts) => {
+function launchTimeline(data, {width} = {}) {
+  return Plot.plot({
+    title: "Launches over time by nation",
+    width,
+    height: 340,
+    marginTop: 24,
+    marginLeft: 54,
+    marginRight: 20,
+    x: {label: null, tickRotate: -25},
+    y: {grid: true, label: "Launches", type: "log"},
+    color: {
+      legend: true,
+      domain: ["United States", "Russia / Soviet Union", "China", "Other"]
+    },
+    marks: [
+      Plot.lineY(data, {x: "year", y: "count", stroke: "rgba(255, 170, 64, 0.95)", strokeWidth: 3.2}),
+      Plot.lineY(yearlyNationCounts, {x: "year", y: "count", stroke: "nation", strokeOpacity: 0.8, strokeWidth: 1.8, tip: true}),
+      Plot.dot(data, {x: "year", y: "count", fill: "var(--theme-background)", stroke: "rgba(255, 170, 64, 0.95)", r: 2.8, tip: true})
+    ]
+  });
+}
+return {launchTimeline};
+}});
+
+define({id: "9513935d", mode: "inline", inputs: ["resize","launchTimeline","yearlyCounts","display"], body: async (resize,launchTimeline,yearlyCounts,display) => {
+display(await(
+resize((width) => launchTimeline(yearlyCounts, {width}))
+))
+}});
+
+define({id: "93b8dc76", inputs: ["Plot"], outputs: ["nationChart"], body: (Plot) => {
+function nationChart(data, {width}) {
+  return Plot.plot({
+    title: "Launches by nation",
+    width,
+    height: 360,
+    marginTop: 24,
+    marginLeft: 170,
+    marginRight: 20,
+    x: {grid: true, label: "Launches"},
+    y: {label: null, domain: data.map((d) => d.nation)},
+    marks: [
+      Plot.barX(data, {x: "count", y: "nation", fill: "rgba(101, 161, 255, 0.8)", tip: true}),
+      Plot.text(data, {x: "count", y: "nation", text: (d) => d.count.toLocaleString("en-US"), dx: 6, fill: "var(--theme-foreground-muted)", fontSize: 11})
+    ]
+  });
+}
+return {nationChart};
+}});
+
+define({id: "7aec425d", mode: "inline", inputs: ["resize","nationChart","nationCounts","display"], body: async (resize,nationChart,nationCounts,display) => {
+display(await(
+resize((width) => nationChart(nationCounts, {width}))
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">DataViz Tutorial</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./example-dashboard">Example dashboard</a></li>
+    <li class="observablehq-link"><a href="./example-report">Example report</a></li>
+    <li class="observablehq-link"><a href="./project">Project Sketches</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:4a29079c:--></div>
+<style>
+  .dashboard-shell {
+    position: relative;
+    padding: 1.25rem 0 3rem;
+  }
+
+  .dashboard-shell::before {
+    content: "";
+    position: absolute;
+    inset: 0 -1rem auto;
+    height: 20rem;
+    z-index: -1;
+    background:
+      radial-gradient(circle at 14% 12%, rgba(101, 161, 255, 0.24), transparent 30%),
+      radial-gradient(circle at 86% 18%, rgba(255, 132, 92, 0.18), transparent 28%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 72%);
+    pointer-events: none;
+  }
+
+  .dashboard-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1.75fr) minmax(18rem, 0.95fr);
+    align-items: stretch;
+    margin-bottom: 1.35rem;
+  }
+
+  .hero,
+  .hero-aside,
+  .metric-card,
+  .panel {
+    border: 1px solid color-mix(in srgb, var(--theme-foreground-muted) 16%, transparent);
+    background: color-mix(in srgb, var(--theme-background) 86%, black);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.18);
+  }
+
+  .hero {
+    padding: 1.45rem 1.5rem;
+    border-radius: 1.5rem;
+    display: grid;
+    gap: 1.15rem;
+    align-content: space-between;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--theme-foreground-focus) 16%, transparent);
+    color: var(--theme-foreground-focus);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    margin: 0.85rem 0 0.55rem;
+    font-size: clamp(2.9rem, 7vw, 5.5rem);
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+  }
+
+  .hero p {
+    margin: 0;
+    max-width: 40rem;
+    color: var(--theme-foreground-muted);
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .hero-aside {
+    padding: 1.25rem 1.3rem;
+    border-radius: 1.5rem;
+    display: grid;
+    gap: 0.95rem;
+    align-content: start;
+  }
+
+  .hero-stat {
+    padding: 0.95rem 1rem;
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--theme-background) 76%, black);
+  }
+
+  .hero-stat .label {
+    margin: 0 0 0.3rem;
+    color: var(--theme-foreground-muted);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .hero-stat .value {
+    margin: 0;
+    font-size: clamp(1.95rem, 4.4vw, 2.85rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+  }
+
+  .hero-stat .support {
+    margin: 0.2rem 0 0;
+    color: var(--theme-foreground-muted);
+    line-height: 1.45;
+  }
+
+  .metric-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 1.55rem;
+  }
+
+  .metric-card {
+    padding: 1rem 1rem 0.95rem;
+    border-radius: 1.15rem;
+  }
+
+  .metric-card h2 {
+    margin: 0 0 0.45rem;
+    color: var(--theme-foreground-muted);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .metric-card .big {
+    display: block;
+    font-size: clamp(1.7rem, 4vw, 2.65rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+  }
+
+  .section {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.45rem 0 0.75rem;
+  }
+
+  .section h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    letter-spacing: -0.03em;
+  }
+
+  .section p {
+    margin: 0.25rem 0 0;
+    color: var(--theme-foreground-muted);
+    line-height: 1.5;
+  }
+
+  .section-badge {
+    padding: 0.42rem 0.72rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--theme-foreground-muted) 18%, transparent);
+    color: var(--theme-foreground-muted);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .panel {
+    padding: 1rem 1rem 0.8rem;
+    border-radius: 1.35rem;
+  }
+
+  .source-note {
+    margin-top: 1rem;
+    color: var(--theme-foreground-muted);
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 900px) {
+    .dashboard-grid,
+    .metric-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section {
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+</style>
+<div class="dashboard-shell">
+  <div class="dashboard-grid">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Launch activity dashboard</div>
+        <h1>Rocket launches 🚀</h1>
+        <p>A dark analytics dashboard for launch history. It combines a clean timeline, quick summary metrics, and a vehicle breakdown so the page feels more like a finished product than a tutorial stub.</p>
+      </div>
+    </div>
+<pre><code>&lt;aside class="hero-aside"&gt;
+  &lt;div class="hero-stat"&gt;
+    &lt;p class="label"&gt;Total launches&lt;/p&gt;
+    &lt;p class="value"&gt;${launches.length.toLocaleString("en-US")}&lt;/p&gt;
+    &lt;p class="support"&gt;All launch records in the dataset.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="hero-stat"&gt;
+    &lt;p class="label"&gt;Peak year&lt;/p&gt;
+    &lt;p class="value"&gt;${peakYear.year.getFullYear()}&lt;/p&gt;
+    &lt;p class="support"&gt;${peakYear.count.toLocaleString("en-US")} launches&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;
+</code></pre>
+  </div>
+  <div class="metric-grid">
+    <div class="metric-card">
+      <h2>United States 🇺🇸</h2>
+      <span class="big"><observablehq-loading></observablehq-loading><!--:92cac4f1:--></span>
+    </div>
+    <div class="metric-card">
+      <h2>Russia 🇷🇺 / Soviet Union</h2>
+      <span class="big"><observablehq-loading></observablehq-loading><!--:f84e9749:--></span>
+    </div>
+    <div class="metric-card">
+      <h2>China 🇨🇳</h2>
+      <span class="big"><observablehq-loading></observablehq-loading><!--:3f89d55f:--></span>
+    </div>
+    <div class="metric-card">
+      <h2>Other</h2>
+      <span class="big"><observablehq-loading></observablehq-loading><!--:d55bddad:--></span>
+    </div>
+  </div>
+<div class="observablehq observablehq--block"><!--:1f6e31b1:--></div>
+  <div class="section">
+    <div>
+      <h2>Launch history</h2>
+      <p>The total launch trend is shown with nation lines layered in so the timeline is broken out by geography.</p>
+    </div>
+    <div class="section-badge">Trend</div>
+  </div>
+  <div class="panel">
+    <observablehq-loading></observablehq-loading><!--:9513935d:-->
+  </div>
+<div class="observablehq observablehq--block"><!--:93b8dc76:--></div>
+  <div class="section">
+    <div>
+      <h2>Nation mix</h2>
+      <p>The launch totals broken out by nation.</p>
+    </div>
+    <div class="section-badge">Breakdown</div>
+  </div>
+  <div class="panel">
+    <observablehq-loading></observablehq-loading><!--:7aec425d:-->
+  </div>
+  <div class="source-note">Data: Jonathan C. McDowell, <a href="https://planet4589.org/space/gcat" target="_blank" rel="noopener noreferrer">General Catalog of Artificial Space Objects</a></div>
+</div>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./"><span>DataViz Tutorial</span></a><a rel="next" href="./example-report"><span>Example report</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2026-04-16T18:52:47">Apr 16, 2026</a>.</div>
+</footer>
+</div>
+</body>
+</html>

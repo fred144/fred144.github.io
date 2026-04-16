@@ -1,0 +1,1 @@
+Observable Framework pages make it easy to mix writing, data loaders, and visual components in a single workflow. This sample paragraph is intentionally long so a slider can reveal just the first n words. By moving the control, we can quickly inspect how text slicing behaves and verify that the output updates reactively as the selected word count changes.
