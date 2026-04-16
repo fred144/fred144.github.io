@@ -18,11 +18,6 @@ markdown:            kramdown
 highlighter:         rouge
 permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
-include:
-	- misc/COMS4995W/dataviz_framework_tutorial/_observablehq
-	- misc/COMS4995W/dataviz_framework_tutorial/_npm
-	- misc/COMS4995W/dataviz_framework_tutorial/_import
-	- misc/COMS4995W/dataviz_framework_tutorial/_file
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Fred Angelo Batan Garcia'
